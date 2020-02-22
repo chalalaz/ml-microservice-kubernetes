@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+**CircleCI Public Status:** [![CircleCI](https://circleci.com/gh/chalalaz/ml-microservice-kubernetes.svg?style=svg)](https://circleci.com/gh/chalalaz/ml-microservice-kubernetes)
 
 ## Project Overview
 
