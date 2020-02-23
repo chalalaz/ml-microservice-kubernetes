@@ -10,7 +10,7 @@ You are given a pre-trained, `sklearn` model that has been trained to predict ho
 
 ## Setup the Environment
 
-#####Create a virtualenv and activate it
+##### Create a virtualenv and activate it
 1. Create an environment: `python -m venv ~/.devops`
 2. Set your environment: `source ~/.devops/bin/activate`
 3. Install dependencies: `make install` or `pip install -r requirements.txt`
