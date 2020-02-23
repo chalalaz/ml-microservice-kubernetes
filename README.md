@@ -10,7 +10,7 @@ You are given a pre-trained, `sklearn` model that has been trained to predict ho
 
 ## Setup the Environment
 
-* Create a virtualenv and activate it
+#####Create a virtualenv and activate it
 1. Create an environment: python -m venv ~/.devops
 2. Set your environment: source ~/.devops/bin/activate
 3. Install dependencies: make install or pip install -r requirements.txt
@@ -24,13 +24,10 @@ You are given a pre-trained, `sklearn` model that has been trained to predict ho
 
 ### Kubernetes Steps
 
-1. Setup and Configure Docker locally
-   https://docs.docker.com/install/
-2. Setup kubectl
-   https://kubernetes.io/docs/tasks/tools/install-kubectl/
-3. Setup Minikube
-   https://kubernetes.io/docs/tasks/tools/install-minikube/
-4. Create secret for Docker hub to get image.
+1. [Setup and Configure Docker locally](https://docs.docker.com/install/).
+2. [Setup kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/).
+3. [Setup Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/).
+4. Create secret for Docker hub to get image.\
    kubectl create secret docker-registry regcred --docker-server=https://hub.docker.com/ --docker-username=YourUsername --docker-    password=YourPassword --docker-email=your_email@mail.com
 5. run image to Containers\
 kubectl run --generator=run-pod/v1 --image=YourDockerPath machine-learning-app --port=80 --labels='app=machine-learning-app'
