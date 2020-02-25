@@ -22,7 +22,7 @@ echo "POD status is Running"
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward --address 0.0.0.0 pod/machine-learning-app 80:80
+kubectl port-forward --address 0.0.0.0 pod/machine-learning-app 8000:80
 
 
-kubectl logs -lapp=machine-learning-app --all-containers=true
+kubectl logs -l app=machine-learning-app --all-containers=true
